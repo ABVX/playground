@@ -21,10 +21,10 @@ print(f"Free: {free_gb:.2f} GB")
 print("=" * 40)
 
 if percent >= 90:
-    status = ("Critical low!!")
+    status = "Critical low!!"
 elif percent >= 60:
-    status = ("Medium")
+    status = "Medium"
 else:
-    status = ("Normal")
+    status = "Normal"
 
 print(f"Usage: {percent:.1f}% - {status} space")
