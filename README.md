@@ -3,9 +3,9 @@
 Here i learning DevOps from zero
 
 ## What i did:
-Created github +
-Created my first repository +
-Learned how to work with terminal -
+1. Created github +
+2. Created my first repository +
+3. Learned how to work with terminal -
 
 ### My targets:
 1. Wrote my first script
