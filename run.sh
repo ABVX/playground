@@ -6,7 +6,9 @@ if  [ -f "index.html" ]; then
 fi
 
 echo "Start archive..."
-docker-compose up
+docker-compose up -d
+echo "waiting for archiver to finish..."
+sleep 5
 
 if [ -f "index.html" ]; then
 	echo "Ready. Check index.html"

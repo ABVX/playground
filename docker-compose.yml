@@ -6,11 +6,11 @@ services:
     volumes:
       - .:/app
 
-web-server:
+  web-server:
     image: nginx:latest
     ports:
       - "8080:80"
     volumes:
-      - ./index.html:/usr/share/nginx/html/index.html:ro
+      - .:/usr/share/nginx/html:ro
     depends_on:
       - archiver
