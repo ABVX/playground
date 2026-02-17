@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if  [ -f "index.html" ]; then
-	rm index.html
+	rm -f index.html
 	echo "Old index.html file will be deleted"
 fi
 
