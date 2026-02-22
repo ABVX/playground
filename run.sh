@@ -7,8 +7,13 @@ fi
 
 echo "Start archive..."
 docker-compose up -d
+
 echo "waiting for archiver to finish..."
-sleep 5
+until [ -f index.html'
+do
+	sleep 1
+done
+echo "File found! Starting web server"
 
 if [ -f "index.html" ]; then
 	echo "Ready. Check index.html"
