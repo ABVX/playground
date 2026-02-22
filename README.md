@@ -1,4 +1,3 @@
-#EN
 # Web Archiver Microservice
 
 A simple Python microservice for archiving web pages, fully packaged in Docker.
