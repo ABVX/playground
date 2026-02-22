@@ -21,10 +21,12 @@ Make sure you have Docker and Docker Compose installed.
    git clone <link_to_your_repository>
    cd archiver
 
-You should start service with this command:
+2. You should start service with this command:
 docker-compose up
+
 Or you can use command to start:
 ./run.sh
+
 And this to off:
 ./down.sh
 
