@@ -19,6 +19,7 @@ Make sure you have Docker and Docker Compose installed.
 
 1. Clone the repository:
    git clone <link_to_your_repository>
+
    cd archiver
 
 2. You should start service with this command:
