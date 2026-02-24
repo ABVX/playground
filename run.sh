@@ -9,7 +9,7 @@ echo "Start archive..."
 docker-compose up -d
 
 echo "waiting for archiver to finish..."
-until [ -f index.html'
+until [ -f index.html ]
 do
 	sleep 1
 done
