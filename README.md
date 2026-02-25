@@ -1,32 +1,28 @@
+## Мой Devops ROADMAP:
 
-Мой Devops ROADMAP:
+1 GIT
 
-DevOps Roadmap
-GIT
+2 Learn one programming language
 
-Learn one programming language
+3 Learn Linux & Scripting
 
-Learn Linux & Scripting
+4 Learn Networking & Security
 
-Learn Networking & Security
+5 Learn Server Management
 
-Learn Server Management
+6 Learn Containers
 
-Learn Containers
+7 Learn Container Orchestration
 
-Learn Container Orchestration
+8 Learn Infrastructure as a Code (IaC)
 
-Learn Infrastructure as a Code (X as Code)
+9 Learn CI/CD
 
-Learn CI/CD
+10 Learn Monitoring & Observability
 
-Learn Monitoring & Observability
+11 Learn one Cloud provider
 
-Learn one Cloud provider
-
-Learn Software Engineering Practices
-
-Bonus: Learn DevSecOps Fundamentals
+12 Learn Software Engineering Practices
 
 ## 22.02.2026 - Чему я научился
 Bash & Автоматизация: Узнал разницу между while и until. Научился заменять "костыльный" sleep на динамическое ожидание файла (until [ -f index.html ]), что делает скрипты надежнее.
