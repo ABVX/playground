@@ -3,5 +3,3 @@ WORKDIR /app
 RUN pip install requests flask
 COPY app.py .
 CMD ["python", "app.py"]
-
-
