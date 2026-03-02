@@ -3,14 +3,21 @@ version: "3.8"
 services:
   archiver:
     build: .
+    networks:
+      - backend
     volumes:
       - .:/app
 
   web-server:
     image: nginx:latest
+    networks:
+      - backend
     ports:
       - "8080:80"
     volumes:
       - .:/usr/share/nginx/html:ro
     depends_on:
       - archiver
+networks:
+  backend:
+    driver: bridge
