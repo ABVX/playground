@@ -3,6 +3,8 @@ import requests
 
 app = Flask(__name__)
 
+print("archiver is running")
+
 @app.route('/')
 def hello():
     url = "https://google.com"
