@@ -7,11 +7,11 @@ print("archiver is running")
 
 @app.route('/')
 def hello():
-    url = "https://google.com"
+    url = "https://github.com/"
     response = requests.get(url)
     with open("index.html", "w") as f:
         f.write(response.text)
     return f"Status: {response.status_code}, OK"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8080)
