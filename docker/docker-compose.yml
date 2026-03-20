@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  archiver:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    networks:
+      - backend
+    volumes:
+      - .:/app
+    healthcheck:
+      test: ["CMD", "curl", "f", "http://localhost:8080/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+  web-server:
+    image: nginx:latest
+    networks:
+      - backend
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    depends_on:
+      archiver:
+        condition: service_healthy
+
+networks:
+  backend:
+    driver: bridge
