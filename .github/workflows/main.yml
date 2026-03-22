@@ -19,7 +19,7 @@ jobs:
           run: pip install requests
 
         - name: Set up Docker
-          run: docker-compose up -d
+          run: docker compose up -d
 
         - name: Run Integration test
           run: python3 tester.py
