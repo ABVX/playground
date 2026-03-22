@@ -6,5 +6,5 @@ RUN pip install requests flask
 RUN apt-get update && apt-get install -y curl
 
 
-COPY app/ .
+COPY app .
 CMD ["python", "/app/app.py"]
