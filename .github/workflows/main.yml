@@ -16,11 +16,15 @@ jobs:
             python-version: '3.9'
 
         - name: Install dependencies
-          run: pip install requests
+          run: pip install requests Flask
 
         - name: Set up Docker
           run: docker compose -f docker/docker-compose.yml up -d
 
         - name: Run Integration test
-          run: python3 tester.py
+          run: python3 tester/tester.py
 
+        - name: Container logs
+          if: failure()
+          run: |
+            docker compose -f docker/docker-compose.yml logs archiver
