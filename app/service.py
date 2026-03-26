@@ -16,5 +16,5 @@ def download_page():
         logging.info("Saved successfully")
 
     except requests.RequestException as e:
-        logging.error(f:Error downloading page: {e}")
+        logging.error(f"Error downloading page: {e}")
 
