@@ -10,7 +10,7 @@ def download_page():
         response = requests.get(URL, timeout=5)
         response.raise_for_status()
 
-        with.open(OUTPUT_FILE, "w") as f:
+        with open(OUTPUT_FILE, "w") as f:
             f.write(response.text)
 
         logging.info("Saved successfully")
