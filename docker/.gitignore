@@ -1,0 +1,14 @@
+#py trash
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# logs and temp files
+*.log
+data/archives/
+
+#configs
+.vscode/
+.idea/
