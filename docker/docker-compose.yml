@@ -9,6 +9,8 @@ services:
       - backend
 #    volumes:
 #      - .:/app
+    ports:
+      - "8080:8080"
     healthcheck:
       test: ["CMD", "curl", "f", "http://localhost:8080/"]
       interval: 10s
@@ -16,17 +18,17 @@ services:
       retries: 3
       start_period: 5s
 
-  web-server:
-    image: nginx:latest
-    networks:
-      - backend
-    ports:
-      - "8080:80"
+#  web-server:
+#    image: nginx:latest
+#    networks:
+#      - backend
+#    ports:
+#      - "8080:80"
 #    volumes:
 #      - .:/usr/share/nginx/html
-    depends_on:
-      archiver:
-        condition: service_healthy
+#    depends_on:
+#      archiver:
+#        condition: service_healthy
 
 networks:
   backend:
