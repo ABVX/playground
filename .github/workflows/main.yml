@@ -21,6 +21,9 @@ jobs:
             - name: Set up Docker
               run: docker compose -f docker/docker-compose.yml up -d
 
+            - name: Wait for service
+              run: sleep 10
+
             - name: Run Integration test
               run: python3 tests/tester.py
 
