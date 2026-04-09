@@ -3,4 +3,6 @@ Dockerfile
 README.md
 docker-compose.yml
 .gitattributes
+.env
+app.log
 *.sh
