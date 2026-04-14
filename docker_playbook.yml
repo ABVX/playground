@@ -1,0 +1,20 @@
+---
+- name: manage docker containers
+  hosts: my_servers
+  become: true
+
+  tasks:
+    - name: pull the latest nginx image
+      docker_image:
+        name: nginx:latest
+        source: pull
+
+
+    - name: start nginx container
+      docker_container:
+        name: docker-archiver-1
+        image: docker-archiver
+        state: started
+        restart_policy: always
+        ports:
+          - "8080:8080"
