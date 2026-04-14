@@ -1,0 +1,17 @@
+---
+- name: Devops automation
+  hosts: my_servers
+  become: true
+
+  tasks:
+    - name: Ensure the backup directory exists
+      file:
+        path: ~/Desktop/archiver/ansible_logs
+        state: directory
+        mode: '0755'
+
+    - name:  Install htop if it is missing
+      apt:
+        name: htop
+        state: present
+        update_cache: yes
