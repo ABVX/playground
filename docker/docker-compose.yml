@@ -3,7 +3,7 @@ version: "3.8"
 services:
   archiver:
     build:
-      context: .
+      context: ..
       dockerfile: docker/Dockerfile
     networks:
       - backend
