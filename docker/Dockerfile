@@ -10,5 +10,6 @@ COPY docker/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY docker/ .
+COPY app/ .
 
 CMD ["python", "app.py"]
