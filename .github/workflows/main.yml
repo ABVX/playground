@@ -19,10 +19,7 @@ jobs:
               run: pip install requests Flask
 
             - name: Set up Docker
-              run: docker compose -f docker/docker-compose.yml up -d --build
-
-            - name: Wait for service
-              run: sleep 20
+              run: docker compose -f docker/docker-compose.yml up -d --wait
 
             - name: Run Integration test
               run: python3 tests/tester.py
