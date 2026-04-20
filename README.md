@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 20.04.26 - Чему я научился
+
+Zero-to-Hero Microservice: Самостоятельно собрал проект с нуля: от написания кода на Flask до конфигурации Docker-сети.
+
+Layer Caching Mastery: На практике применил правильный порядок команд в Dockerfile (COPY requirements -> RUN pip -> COPY code), чтобы ускорить сборку в разы.
+
+YAML Hierarchy: Разобрался в отступах docker-compose.yml и понял, как связывать локальную папку с контейнером через build: ..
+
+Python Web Fundamentals: Вспомнил разницу между = и == в условиях и научился правильно импортировать Flask.
+
 ## 19.04.26 - Чему я научился
 
 Deterministic Startup (--wait): Понял, что sleep — это костыль. Флаг --wait в Docker Compose заставляет систему ждать реальной готовности контейнеров (прохождения healthcheck), прежде чем передавать управление дальше. Это делает CI-пайплайны стабильными.
