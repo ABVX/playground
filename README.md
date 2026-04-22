@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 22.04.26 - Чему я научился
+
+Dockerfile с нуля: Написал рабочий Dockerfile для Python приложения самостоятельно — FROM, COPY, RUN pip install -r requirements.txt, CMD — без копипасты.
+
+docker-compose.yml: Самостоятельно написал compose файл с сервисом, build контекстом и проброском портов.
+
+Ansible hosts.ini: Разобрался со структурой inventory файла — группы в квадратных скобках, IP на следующей строке.
+
+Первый Ansible playbook: Написал playbook с двумя тасками — установка nginx через модуль apt (state: present) и запуск через модуль service (state: started, enabled: yes).
+
 ## 21.04.26 - Чему я научился
 
 Чистка системы: Написал работающий Bash-скрипт clean.sh, который одной командой удаляет мусорные образы и контейнеры, освободив ~40MB места.
