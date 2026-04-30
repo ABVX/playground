@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 30.04.26 - Чему я научился
+
+Kubernetes — зачем нужен: Docker запускает контейнеры на одном сервере но не следит за ними. Kubernetes оркестрирует — автоматически перезапускает упавшие поды, масштабирует, балансирует нагрузку.
+
+Три главных объекта: Pod это обёртка вокруг контейнера. Deployment управляет подами и следит чтобы нужное количество всегда работало. Service открывает доступ к подам снаружи.
+
+kubectl — команды: kubectl get pods посмотреть поды, kubectl get deployments деплойменты, kubectl apply -f file.yml применить конфиг, kubectl logs pod-name логи пода.
+
+Первый Deployment манифест: Написал файл с нуля — apiVersion, kind, metadata, spec, replicas, selector, template, containers. Разобрался с вложенностью YAML — template и второй spec внутри первого spec.
+
 ## 29.04.26 - Чему я научился
 
 Docker networks: Контейнеры общаются через bridge сеть. В docker-compose сервисы обращаются друг к другу просто по имени — db, app и тд. Docker сам резолвит имя в IP.
