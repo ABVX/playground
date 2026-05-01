@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 1.05.26 - Чему я научился
+
+Kubernetes Service: Разобрался зачем нужен Service — поды меняют IP при перезапуске, Service даёт постоянный адрес. Три типа: ClusterIP только внутри кластера, NodePort открывает снаружи, LoadBalancer для облака.
+
+Deployment манифест — понял логику: первый metadata это имя самого Deployment, второй metadata внутри template это ярлыки для подов. matchLabels в selector должен совпадать с labels в template — так Deployment находит свои поды, и Service тоже по этим ярлыкам находит поды.
+
+Service манифест: написал самостоятельно — apiVersion, kind, metadata, spec с type NodePort, selector и ports.
+
+Deployment с нуля: написал полный Deployment для backend с нуля без подсказок — apps/v1, replicas, matchLabels, template, labels, containers.
+
 ## 30.04.26 - Чему я научился
 
 Kubernetes — зачем нужен: Docker запускает контейнеры на одном сервере но не следит за ними. Kubernetes оркестрирует — автоматически перезапускает упавшие поды, масштабирует, балансирует нагрузку.
