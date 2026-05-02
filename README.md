@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 2.05.26 - Чему я научился
+
+Service закрепил: Написал Service манифест самостоятельно — apiVersion, kind, metadata, spec с type NodePort, ports и selector. Запомнил что selector ищет поды по labels которые совпадают с Deployment.
+
+Namespace: Это как папки внутри кластера — разделяет ресурсы на группы. production, staging, monitoring. По умолчанию всё в namespace default. Команда kubectl get namespace.
+
+Кластер: Кластер → узлы (серверы) → поды → контейнеры. Kubernetes управляет всей этой иерархией.
+
+ConfigMap: Хранит конфигурацию отдельно от кода — переменные окружения, адреса баз данных. Та же структура что Deployment и Service — apiVersion, kind, metadata, но вместо spec используется data. Написал ConfigMap с нуля без ошибок.
+
 ## 1.05.26 - Чему я научился
 
 Kubernetes Service: Разобрался зачем нужен Service — поды меняют IP при перезапуске, Service даёт постоянный адрес. Три типа: ClusterIP только внутри кластера, NodePort открывает снаружи, LoadBalancer для облака.
