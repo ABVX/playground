@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 3.05.26 - Чему я научился
+
+Secret: Хранит чувствительные данные — пароли, токены, ключи API. Отличие от ConfigMap — данные в base64 и добавляется type: Opaque. Написал Secret с нуля без ошибок.
+
+Secret в Deployment: Переменные из Secret передаются через env → valueFrom → secretKeyRef → name и key. Для ConfigMap то же самое но configMapKeyRef.
+
+Полный Deployment с Secret: Написал самостоятельно полный манифест с env переменными из Secret. Это реальный production паттерн.
+
+Главный урок дня: Все Kubernetes манифесты одной структуры — apiVersion, kind, metadata, spec/data. Выучил один — остальные пишутся по той же логике.
+
 ## 2.05.26 - Чему я научился
 
 Service закрепил: Написал Service манифест самостоятельно — apiVersion, kind, metadata, spec с type NodePort, ports и selector. Запомнил что selector ищет поды по labels которые совпадают с Deployment.
