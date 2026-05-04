@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 4.05.26 - Чему я научился
+
+Ingress: Умный роутер для входящего трафика — один точка входа направляет запросы по URL к нужным сервисам. mysite.com/api → сервис api, mysite.com/ → сервис frontend. Заменяет множество NodePort одним объектом.
+
+Полный Kubernetes стек: Написал все пять объектов в одном файле разделённых через ---. ConfigMap для конфига, Secret для паролей, Deployment для подов, Service для доступа, Ingress для роутинга. Это реальный production паттерн.
+
+Ingress структура: rules → host → http → paths → path + pathType: Prefix + backend → service → name и port.
+
 ## 3.05.26 - Чему я научился
 
 Secret: Хранит чувствительные данные — пароли, токены, ключи API. Отличие от ConfigMap — данные в base64 и добавляется type: Opaque. Написал Secret с нуля без ошибок.
