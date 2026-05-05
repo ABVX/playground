@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 5.05.26 - Чему я научился
+
+Закрепил env переменные: ConfigMap передаётся через configMapKeyRef, Secret через secretKeyRef. Каждая переменная отдельный элемент списка с - name:, valueFrom, и ключом.
+
+Полный стек второй раз: Написал все пять объектов самостоятельно — ConfigMap, Secret, Deployment, Service, Ingress. Ошибок стало меньше чем вчера.
+
+Понял логику ConfigMap: DB_HOST: "postgres" это просто присваивание — ключ и значение. Приложение читает через os.getenv("DB_HOST"). Kubernetes передаёт значение в контейнер через env.
+
+Общая цепочка: Запрос → Ingress → Service → Pod → Контейнер. ConfigMap и Secret передают переменные внутрь контейнера.
+
 ## 4.05.26 - Чему я научился
 
 Ingress: Умный роутер для входящего трафика — один точка входа направляет запросы по URL к нужным сервисам. mysite.com/api → сервис api, mysite.com/ → сервис frontend. Заменяет множество NodePort одним объектом.
