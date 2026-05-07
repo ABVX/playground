@@ -24,6 +24,12 @@
 
 12 Learn Software Engineering Practices
 
+## 7.05.26 - Чему я научился
+
+CI/CD — разобрал свой пайплайн: Checkout скачивает код, setup-python устанавливает Python, --wait ждёт готовности контейнера, if: failure() сохраняет логи при ошибке, secrets передаются через ${{ secrets.NAME }}.
+
+GitHub Actions структура: name → on → jobs → build → runs-on + steps. Steps всегда внутри job. Написал workflow с нуля самостоятельно.
+
 ## 6.05.26 - Чему я научился
 
 Kubernetes закрепил: Все объекты знаю — Pod, Deployment, Service, Ingress, ConfigMap, Secret, и как они связаны между собой.
