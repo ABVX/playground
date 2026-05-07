@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 6.05.26 - Чему я научился
+
+Kubernetes закрепил: Все объекты знаю — Pod, Deployment, Service, Ingress, ConfigMap, Secret, и как они связаны между собой.
+
+ConfigMap понял до конца: Просто присваивание переменной значения. Разные значения для разных сред. Приложение читает через os.getenv().
+
+CI/CD — база: CI проверяет код при push, CD доставляет на сервер. Структура GitHub Actions — on когда запускать, jobs что делать, steps конкретные шаги.
+
 ## 5.05.26 - Чему я научился
 
 Закрепил env переменные: ConfigMap передаётся через configMapKeyRef, Secret через secretKeyRef. Каждая переменная отдельный элемент списка с - name:, valueFrom, и ключом.
