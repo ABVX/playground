@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 8.05.26 - Чему я научился
+
+CI/CD деплой на сервер: GitHub Actions после тестов заходит на сервер по SSH через appleboy/ssh-action и выполняет docker compose pull и docker compose up -d. Сервер скачивает новый образ и перезапускается без ручного вмешательства.
+
+Полный пайплайн написал сам: checkout → тест → login DockerHub → build and push → SSH деплой. Каждый шаг зависит от предыдущего — если тест упал, деплой не запустится.
+
+Secrets: Передаются через ${{ secrets.NAME }} — пароли никогда не хардкодятся в файле, хранятся в GitHub Settings.
+
 ## 7.05.26 - Чему я научился
 
 CI/CD — разобрал свой пайплайн: Checkout скачивает код, setup-python устанавливает Python, --wait ждёт готовности контейнера, if: failure() сохраняет логи при ошибке, secrets передаются через ${{ secrets.NAME }}.
