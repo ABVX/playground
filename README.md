@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 10.05.26 - Чему я научился
+
+docker-compose для мониторинга: Написал с нуля — Prometheus на порту 9090, Grafana на 3000. Volume монтирует ./prometheus.yml:/etc/prometheus/prometheus.yml чтобы Prometheus знал откуда собирать метрики.
+
+prometheus.yml закрепил: Две секции — global с scrape_interval и scrape_configs с job_name, static_configs и targets. scrape_configs на уровне global, не внутри. Написал правильно после нескольких попыток.
+
+Главная ошибка дня: Путал scrape-interval и scrape_interval, status_configs и static_configs. Подчёркивание везде, не дефис.
+
 ## 9.05.26 - Чему я научился
 
 Мониторинг — зачем нужен: Следить за состоянием сервера и приложения — CPU, память, нагрузка, доступность. Без мониторинга узнаёшь что сломалось только когда пользователи жалуются.
