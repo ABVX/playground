@@ -24,6 +24,18 @@
 
 12 Learn Software Engineering Practices
 
+## 9.05.26 - Чему я научился
+
+Мониторинг — зачем нужен: Следить за состоянием сервера и приложения — CPU, память, нагрузка, доступность. Без мониторинга узнаёшь что сломалось только когда пользователи жалуются.
+
+Prometheus: Собирает метрики через scraping — заходит на /metrics каждые N секунд. Для сервера node_exporter, для Docker cadvisor. Написал prometheus.yml с нуля без ошибок — scrape_interval и targets.
+
+Grafana: Подключается к Prometheus и отображает данные в виде графиков и дашбордов. Prometheus хранит, Grafana показывает.
+
+Alertmanager: Отправляет уведомления в Telegram, Slack, email когда Prometheus замечает проблему. В своём проекте уже сделал похожую логику через Python скрипт.
+
+Docker Compose для мониторинга: Prometheus на порту 9090, Grafana на 3000, конфиг монтируется через volume.
+
 ## 8.05.26 - Чему я научился
 
 CI/CD деплой на сервер: GitHub Actions после тестов заходит на сервер по SSH через appleboy/ssh-action и выполняет docker compose pull и docker compose up -d. Сервер скачивает новый образ и перезапускается без ручного вмешательства.
