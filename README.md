@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 11.05.26 - Чему я научился
+
+prometheus.yml закрепил: Написал с нуля после подсказки структуры — global с scrape_interval, scrape_configs с job_name, static_configs, targets. Структура запоминается.
+
+Облако — теория: Зачем нужно — арендуешь виртуальный сервер вместо покупки физического, платишь за использование.
+
+Основные сервисы Yandex Cloud: VM — виртуальная машина, Object Storage — хранение файлов, Container Registry — хранение Docker образов, Managed Kubernetes — готовый кластер за 5 минут, VPC — приватная сеть.
+
 ## 10.05.26 - Чему я научился
 
 docker-compose для мониторинга: Написал с нуля — Prometheus на порту 9090, Grafana на 3000. Volume монтирует ./prometheus.yml:/etc/prometheus/prometheus.yml чтобы Prometheus знал откуда собирать метрики.
