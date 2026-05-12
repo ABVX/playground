@@ -24,6 +24,14 @@
 
 12 Learn Software Engineering Practices
 
+## 12.05.26 - Чему я научился
+
+prometheus.yml закрепил: Повторил написание конфига с нуля. Структура global с scrape_interval и scrape_configs с job_name, static_configs и targets теперь понятнее.
+
+docker-compose.monitoring.yml: Собрал стек мониторинга. Прописал образы, ports (9090 для Prom, 3000 для Grafana) и volumes для проброса конфигов.
+
+Практика (Prometheus + Grafana): Первый раз на деле понял, как они работают в связке. Prometheus собирает данные, Grafana их визуализирует. Прокинул им порты на VM и немного разобрался в интерфейсе: создание Data Source и базовые запросы.
+
 ## 11.05.26 - Чему я научился
 
 prometheus.yml закрепил: Написал с нуля после подсказки структуры — global с scrape_interval, scrape_configs с job_name, static_configs, targets. Структура запоминается.
