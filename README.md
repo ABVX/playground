@@ -24,6 +24,12 @@
 
 12 Learn Software Engineering Practices
 
+## 13.05.26 - Чему я научился
+
+Общий тест по всему материалу. Что знаю хорошо: docker ps, replicas, docker compose pull, kill vs kill -9, kubectl apply, scrape_interval, secrets в GitHub Actions.
+
+Пробелы которые нашёл: ps aux | grep nginx — забыл синтаксис pipe. Порт SSH — 22. Ansible handlers — запускаются только когда таск реально что-то изменил, не каждый раз.
+
 ## 12.05.26 - Чему я научился
 
 prometheus.yml закрепил: Повторил написание конфига с нуля. Структура global с scrape_interval и scrape_configs с job_name, static_configs и targets теперь понятнее.
