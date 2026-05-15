@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 15.05.26 - Чему я научился
+
+Terraform — что это: Инструмент для создания инфраструктуры через код. Ansible настраивает что внутри сервера, Terraform создаёт сам сервер. Работают вместе — сначала Terraform, потом Ansible.
+
+Три команды: terraform init — инициализация, terraform plan — предварительный просмотр, terraform apply — применить. terraform destroy — удалить всю инфраструктуру. Важно делать destroy в облаке иначе деньги списываются.
+
+HCL синтаксис: Написал Terraform файл для VM с нуля — resource "тип" "имя", resources блок с cores и memory. Проще чем казалось.
+
+Облако без практики: Yandex Cloud, AWS, GCP — та же логика что локально, просто через веб или CLI. Когда будет карта — практика ляжет быстро потому что концепции уже знаю.
+
 ## 13.05.26 - Чему я научился
 
 Общий тест по всему материалу. Что знаю хорошо: docker ps, replicas, docker compose pull, kill vs kill -9, kubectl apply, scrape_interval, secrets в GitHub Actions.
