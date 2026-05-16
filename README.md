@@ -24,6 +24,16 @@
 
 12 Learn Software Engineering Practices
 
+## 16.05.26 - Чему я научился
+
+Terraform закрепил: Написал resource блок с нуля — resource "тип" "имя", resources с cores и memory, boot_disk с initialize_params. Структура запоминается через повторение.
+
+Terraform переменные: Объявляются через variable "name" { default = value }, используются через var.name. Та же идея что в Ansible и Kubernetes — не хардкодить значения, менять в одном месте.
+
+Terraform state: Файл terraform.tfstate хранит что уже создано. Если удалить — Terraform не знает что существует и создаст дубликаты. В команде хранят в облаке (remote state) чтобы все видели одно состояние.
+
+Terraform output: Выводит информацию после apply — например IP адрес созданной VM.
+
 ## 15.05.26 - Чему я научился
 
 Terraform — что это: Инструмент для создания инфраструктуры через код. Ansible настраивает что внутри сервера, Terraform создаёт сам сервер. Работают вместе — сначала Terraform, потом Ansible.
