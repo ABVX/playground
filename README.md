@@ -24,6 +24,18 @@
 
 12 Learn Software Engineering Practices
 
+## 17.05.26 - Чему я научился
+
+Большой тест по всему roadmap - 10 из 15. Это честная оценка после полутора месяцев обучения.
+
+Что знаю хорошо: docker compose pull, tail -f, replicas, secrets в GitHub Actions, scrape_interval, terraform destroy, kubectl apply, ConfigMap vs Secret, ps aux grep, cron.
+
+Что подтянул сегодня: git checkout -b для создания ветки. terraform plan - предварительный просмотр, terraform init - инициализация. Service открывает доступ к подам, Ingress роутит трафик по URL.
+
+Весь roadmap пройден за полтора месяца. Git, Python, Linux, Networking, Docker, Ansible, Kubernetes, CI/CD, Monitoring, Terraform, Cloud теория.
+
+Прогресс очевиден - в начале не мог написать Dockerfile, сейчас пишешь Kubernetes манифесты и Terraform файлы самостоятельно. Следующий этап - практика и углубление в каждую тему.
+
 ## 16.05.26 - Чему я научился
 
 Terraform закрепил: Написал resource блок с нуля — resource "тип" "имя", resources с cores и memory, boot_disk с initialize_params. Структура запоминается через повторение.
