@@ -24,6 +24,12 @@
 
 12 Learn Software Engineering Practices
 
+## 18.05.26 - Чему я научился
+
+Повторение — всё вспомнил: git checkout -b, Service vs Ingress, terraform plan. То что вчера подтягивал — сегодня ответил сразу.
+
+Kubernetes Deployment написал почти с нуля — после подсказки структуры написал правильно без ошибок. matchLabels, template, metadata, labels, containers — всё на месте.
+
 ## 17.05.26 - Чему я научился
 
 Большой тест по всему roadmap - 10 из 15. Это честная оценка после полутора месяцев обучения.
