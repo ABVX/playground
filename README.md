@@ -24,6 +24,12 @@
 
 12 Learn Software Engineering Practices
 
+## 23.05.26 - Чему я научился
+
+Повторение: Ingress, kubectl get pods, разница Deployment и Service — всё вспомнил сразу.
+
+prometheus.yml по памяти: Написал правильно после одной подсказки — global с scrape_interval, scrape_configs с job_name, static_configs, targets. Структура запоминается.
+
 ## 21.05.26 - Чему я научился
 
 Ingress написал и применил: Последний объект в Kubernetes стеке. Написал почти с нуля. Применил через kubectl apply -f ingress.yml.
