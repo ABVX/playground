@@ -24,6 +24,18 @@
 
 12 Learn Software Engineering Practices
 
+## 2.06.26 - Чему я научился
+
+docker-compose.yml разобрал по частям: понял что такое ports, healthcheck, networks, depends_on, volumes. Нашёл баг — -f флаг у curl в healthcheck был без дефиса.
+
+Dockerfile построчно: разобрал каждую инструкцию — FROM, WORKDIR, RUN, COPY, CMD. Понял трюк с двойным COPY — сначала requirements.txt, потом весь код, чтобы Docker кэшировал слой с зависимостями.
+
+slim образы: сравнил python:3.9 (1.09GB) vs python:3.9-slim (122MB) — разница в 9 раз. В проде всегда slim.
+
+Отладка контейнера: научился читать docker-compose logs, понял что Exited (1) значит краш, нашёл ошибку No such file or directory и починил путь в CMD.
+
+healthcheck на практике: увидел (healthy) в docker ps — контейнер сам себя проверяет каждые 10 секунд.
+
 ## 31.05.26 - Чему я научился
 
 Git Flow на практике: Создал feature-ветку, запушил изменения, открыл Pull Request и замержил в main. Понял что PR — это точка контроля кода в команде, а не просто кнопка.
