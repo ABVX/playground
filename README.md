@@ -36,6 +36,10 @@ CI/CD pipeline разобрал по шагам: понял что GitHub Action
 
 git diff: узнал как смотреть изменения до коммита.
 
+Тест по всему роадмапу: прошёл все 12 пунктов, средний балл 3.1/5. Сильные места — Git, Docker, CI/CD. Слабые — K8s и облако.
+
+Разобрал вопрос "что происходит когда вводишь google.com": DNS → TCP handshake (SYN/SYN-ACK/ACK) → TLS → HTTP запрос → рендер.
+
 ## 2.06.26 - Чему я научился
 
 docker-compose.yml разобрал по частям: понял что такое ports, healthcheck, networks, depends_on, volumes. Нашёл баг — -f флаг у curl в healthcheck был без дефиса.
