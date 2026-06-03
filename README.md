@@ -24,6 +24,18 @@
 
 12 Learn Software Engineering Practices
 
+## 3.06.26 - Чему я научился
+
+CI/CD pipeline разобрал по шагам: понял что GitHub Actions автоматически запускает VM, тестирует код и пушит Docker образ в DockerHub при каждом push.
+
+Улучшил pipeline: добавил условие if: github.ref == 'refs/heads/main' — теперь образ пушится в DockerHub только из main ветки, а не с любой feature ветки.
+
+Триггеры: настроил on: push: branches — pipeline запускается только на нужных ветках.
+
+Отладка в CI: научился читать логи в GitHub Actions, нашёл ошибку app.py not found через шаг Container logs.
+
+git diff: узнал как смотреть изменения до коммита.
+
 ## 2.06.26 - Чему я научился
 
 docker-compose.yml разобрал по частям: понял что такое ports, healthcheck, networks, depends_on, volumes. Нашёл баг — -f флаг у curl в healthcheck был без дефиса.
