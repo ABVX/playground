@@ -1,34 +1,35 @@
 # Web Archiver Microservice
 
-A simple Python microservice for archiving web pages, fully packaged in Docker.
+![CI](https://github.com/ABVX/playground/actions/workflows/main.yml/badge.svg)
 
-## What does this project do?
-* **Downloads** the HTML code of the specified URL.
-* **Saves** the result to the `index.html` file.
-* **Isolates** the execution environment (Python, libraries) inside the container.
-* **Synchronizes** the received data with the local folder via Docker Volumes.
+Микросервис на Python для архивации веб-страниц с полным DevOps стеком.
 
-## Technologies
-* **Python 3.9** (`requests` library)
-* **Docker** (containerization)
-* **Docker Compose** (launch orchestration)
-* **Git** (version control)
+## Стек
+- **Python 3.9** + Flask
+- **Docker** + Docker Compose
+- **Kubernetes** — манифесты (Deployment, Service, Ingress)
+- **Prometheus** + Grafana — мониторинг
+- **Terraform** — инфраструктура как код
+- **Ansible** — автоматизация
+- **GitHub Actions** — CI/CD
 
-## How to run
-Make sure you have Docker and Docker Compose installed.
+## Быстрый старт
+```bash
+git clone https://github.com/ABVX/playground
+cd playground
+docker-compose -f docker/docker-compose.yml up -d
+```
 
-1. Clone the repository:
-   git clone <link_to_your_repository>
+Сервис запустится на `http://localhost:8080`
 
-   cd archiver
+## CI/CD
+При каждом push в `main`:
+1. Запускаются интеграционные тесты
+2. Docker образ пушится в DockerHub
 
-2. You should start service with this command:
-docker-compose up
-
-Or you can use command to start:
-./run.sh
-
-And this to off:
-./down.sh
-
-1
+## Мониторинг
+```bash
+docker-compose -f docker-compose.monitoring.yml up -d
+```
+Prometheus: `http://localhost:9090`
+Grafana: `http://localhost:3000`
