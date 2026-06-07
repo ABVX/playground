@@ -21,8 +21,10 @@ def send_tg(message1):
         url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
         data = {"chat_id": ID, "text": message1}
         requests.post(url, data=data, timeout=5)
+
     except Exception as e:
         print(f"Failed to send telegram: {e}")
+        log_message(f"Failed to send telegram: {e}")
 
 def log_message(msg):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
