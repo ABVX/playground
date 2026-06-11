@@ -15,3 +15,15 @@
         name: htop
         state: present
         update_cache: yes
+
+    - name: install docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: ensure docker is running
+      service:
+        name: docker
+        state: started
+        enabled: yes
