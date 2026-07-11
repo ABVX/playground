@@ -18,10 +18,9 @@ while True:
     for site in sites:
         try:
             response = requests.get(site)
-            REQUEST_COUNTER.inc()
-
             if response.status_code == 200: # .status_code возвращает цифровой код от сервера в виде числа
                 print (f"[OK] {site} available")
+                REQUEST_COUNTER.inc()
             else:
                 print (f"[ERROR] {site} вернул код {response.status_code}")
 
